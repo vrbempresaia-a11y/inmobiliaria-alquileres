@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Bages Living | Alquiler de viviendas</title>
+  <title>Bages Living | Alquiler de viviendas en Manresa y Bages</title>
 
-  <meta name="description" content="Bages Living - Inmobiliaria especializada en alquiler de viviendas en Bages. Encuentra tu próximo hogar y solicita tu visita.">
+  <meta
+    name="description"
+    content="Bages Living Inmobiliaria. Encuentra tu vivienda de alquiler en Manresa y la comarca del Bages. Visitas, atención al inquilino y gestión inmobiliaria."
+  >
 
   <style>
     * {
@@ -21,8 +24,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      color: #263238;
-      background: #f7f8f7;
+      color: #24312d;
+      background: #f7f8f6;
       line-height: 1.6;
     }
 
@@ -32,8 +35,14 @@
     }
 
     img {
-      max-width: 100%;
+      width: 100%;
       display: block;
+    }
+
+    .container {
+      width: 92%;
+      max-width: 1180px;
+      margin: auto;
     }
 
     /* HEADER */
@@ -43,205 +52,245 @@
       top: 0;
       z-index: 1000;
       background: rgba(255,255,255,0.97);
-      border-bottom: 1px solid #e8e8e8;
-      backdrop-filter: blur(10px);
+      border-bottom: 1px solid #e7ebe8;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.05);
     }
 
     .nav {
-      max-width: 1200px;
-      margin: auto;
-      padding: 16px 22px;
+      min-height: 76px;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       gap: 20px;
     }
 
     .logo {
       display: flex;
       align-items: center;
-      gap: 10px;
-      font-weight: bold;
-      font-size: 21px;
-      color: #163b35;
+      gap: 11px;
+      font-weight: 800;
+      color: #173c35;
+      font-size: 22px;
     }
 
     .logo-icon {
-      width: 42px;
-      height: 42px;
-      border-radius: 12px;
-      background: #d9b56d;
+      width: 45px;
+      height: 45px;
+      border-radius: 13px;
+      background: linear-gradient(135deg, #1f6b5b, #8abf9f);
+      color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
-      font-size: 21px;
+      font-size: 23px;
+      box-shadow: 0 7px 18px rgba(31,107,91,0.2);
+    }
+
+    .logo small {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 1.7px;
+      color: #7b8883;
+      margin-top: -2px;
+      font-weight: 600;
     }
 
     nav {
       display: flex;
-      gap: 25px;
       align-items: center;
-    }
-
-    nav a {
+      gap: 22px;
       font-size: 14px;
       font-weight: 600;
-      color: #40514d;
+      color: #43534e;
     }
 
     nav a:hover {
-      color: #b48b40;
+      color: #1f6b5b;
     }
 
     .nav-button {
-      background: #163b35;
-      color: white !important;
-      padding: 11px 18px;
-      border-radius: 25px;
+      background: #1f6b5b;
+      color: white;
+      padding: 11px 17px;
+      border-radius: 10px;
+    }
+
+    .nav-button:hover {
+      background: #174f43;
+      color: white;
     }
 
     /* HERO */
 
     .hero {
       min-height: 650px;
-      background:
-        linear-gradient(rgba(15,39,35,0.52), rgba(15,39,35,0.45)),
-        url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=85")
-        center/cover;
       display: flex;
       align-items: center;
-    }
-
-    .hero-content {
-      max-width: 1200px;
-      width: 100%;
-      margin: auto;
-      padding: 80px 22px;
+      position: relative;
+      background:
+        linear-gradient(
+          90deg,
+          rgba(14,38,32,0.88),
+          rgba(14,38,32,0.55),
+          rgba(14,38,32,0.15)
+        ),
+        url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
       color: white;
     }
 
-    .tag {
+    .hero-content {
+      max-width: 700px;
+      padding: 80px 0;
+    }
+
+    .eyebrow {
       display: inline-block;
-      background: rgba(255,255,255,0.18);
-      border: 1px solid rgba(255,255,255,0.35);
-      padding: 8px 15px;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 8px 14px;
       border-radius: 30px;
+      font-size: 13px;
       margin-bottom: 20px;
-      font-size: 14px;
       backdrop-filter: blur(5px);
     }
 
     .hero h1 {
-      font-size: clamp(42px, 6vw, 72px);
+      font-size: clamp(40px, 6vw, 68px);
       line-height: 1.05;
-      max-width: 800px;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
+      letter-spacing: -1.8px;
     }
 
     .hero p {
-      font-size: 20px;
+      font-size: 19px;
       max-width: 650px;
+      color: #edf5f1;
       margin-bottom: 32px;
-      color: #f5f5f5;
     }
 
-    .buttons {
+    .hero-buttons {
       display: flex;
       flex-wrap: wrap;
       gap: 13px;
     }
 
     .button {
-      display: inline-block;
-      padding: 14px 23px;
-      border-radius: 30px;
-      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 21px;
+      border-radius: 12px;
+      font-weight: 700;
       border: none;
       cursor: pointer;
+      transition: 0.2s;
       font-size: 15px;
     }
 
     .button-primary {
-      background: #d9b56d;
-      color: white;
+      background: #d8a85f;
+      color: #18251f;
     }
 
-    .button-secondary {
+    .button-primary:hover {
+      transform: translateY(-2px);
+      background: #e4b975;
+    }
+
+    .button-light {
       background: white;
-      color: #163b35;
+      color: #1f6b5b;
+    }
+
+    .button-light:hover {
+      transform: translateY(-2px);
     }
 
     /* SEARCH */
 
     .search-box {
-      max-width: 1100px;
-      margin: -55px auto 70px;
+      margin-top: -50px;
       position: relative;
       z-index: 10;
+    }
+
+    .search-inner {
       background: white;
-      padding: 28px;
+      padding: 25px;
       border-radius: 20px;
       box-shadow: 0 15px 45px rgba(0,0,0,0.12);
     }
 
-    .search-box h2 {
-      color: #163b35;
-      margin-bottom: 20px;
+    .search-title {
+      margin-bottom: 17px;
+    }
+
+    .search-title h2 {
+      font-size: 23px;
+      color: #173c35;
+    }
+
+    .search-title p {
+      color: #718079;
+      font-size: 14px;
     }
 
     .search-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 14px;
+      gap: 12px;
     }
 
     select,
     input,
     textarea {
       width: 100%;
-      padding: 14px;
-      border: 1px solid #ddd;
+      padding: 13px 14px;
+      border: 1px solid #dce3df;
       border-radius: 10px;
-      font-family: inherit;
-      font-size: 14px;
       background: white;
+      color: #263630;
+      font-size: 14px;
+      outline: none;
+    }
+
+    select:focus,
+    input:focus,
+    textarea:focus {
+      border-color: #5e9b86;
+      box-shadow: 0 0 0 3px rgba(94,155,134,0.12);
     }
 
     /* SECTIONS */
 
     section {
-      padding: 80px 22px;
+      padding: 85px 0;
     }
 
-    .container {
-      max-width: 1200px;
-      margin: auto;
-    }
-
-    .section-title {
+    .section-heading {
       text-align: center;
-      margin-bottom: 45px;
+      max-width: 720px;
+      margin: 0 auto 45px;
     }
 
-    .section-title span {
-      color: #b48b40;
-      font-size: 14px;
-      font-weight: bold;
+    .section-heading span {
+      color: #1f6b5b;
+      font-size: 13px;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 2px;
+      letter-spacing: 1.8px;
     }
 
-    .section-title h2 {
-      font-size: 40px;
-      color: #163b35;
-      margin: 8px 0 12px;
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      color: #173c35;
+      margin: 9px 0 12px;
+      line-height: 1.15;
     }
 
-    .section-title p {
-      max-width: 650px;
-      margin: auto;
-      color: #66736f;
+    .section-heading p {
+      color: #6d7b75;
     }
 
     /* PROPERTIES */
@@ -260,268 +309,210 @@
       background: white;
       border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      border: 1px solid #e8ece9;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.06);
       transition: 0.25s;
     }
 
     .property-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+      box-shadow: 0 18px 35px rgba(0,0,0,0.11);
     }
 
     .property-image {
-      height: 245px;
+      height: 220px;
       position: relative;
       overflow: hidden;
     }
 
     .property-image img {
-      width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: 0.4s;
     }
 
-    .price {
-      position: absolute;
-      bottom: 15px;
-      left: 15px;
-      background: #163b35;
-      color: white;
-      padding: 8px 13px;
-      border-radius: 8px;
-      font-weight: bold;
+    .property-card:hover .property-image img {
+      transform: scale(1.04);
     }
 
-    .available {
+    .tag {
       position: absolute;
       top: 15px;
-      right: 15px;
+      left: 15px;
       background: #fff;
-      color: #163b35;
+      color: #1f6b5b;
       padding: 7px 11px;
       border-radius: 20px;
       font-size: 12px;
-      font-weight: bold;
+      font-weight: 800;
     }
 
-    .property-info {
-      padding: 22px;
+    .property-body {
+      padding: 20px;
     }
 
-    .property-info h3 {
-      color: #163b35;
+    .property-body h3 {
+      font-size: 20px;
+      color: #193e36;
       margin-bottom: 6px;
     }
 
     .location {
-      color: #777;
+      color: #75827d;
       font-size: 14px;
-      margin-bottom: 15px;
+      margin-bottom: 14px;
     }
 
-    .details {
+    .property-info {
       display: flex;
-      gap: 15px;
-      color: #555;
+      flex-wrap: wrap;
+      gap: 13px;
       font-size: 13px;
-      margin-bottom: 20px;
+      color: #52625c;
+      border-top: 1px solid #edf0ee;
+      padding-top: 13px;
+      margin-bottom: 16px;
+    }
+
+    .price {
+      font-size: 21px;
+      font-weight: 800;
+      color: #1f6b5b;
+      margin-bottom: 14px;
     }
 
     /* VIDEO */
 
     .video-section {
-      background: #edf2ef;
+      background: #eef4f0;
     }
 
     .video-wrapper {
-      max-width: 1000px;
+      max-width: 950px;
       margin: auto;
       border-radius: 22px;
       overflow: hidden;
-      box-shadow: 0 15px 45px rgba(0,0,0,0.15);
-      background: #111;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.15);
+      background: #173c35;
+      aspect-ratio: 16 / 9;
     }
 
     .video-wrapper iframe {
       width: 100%;
-      height: 550px;
+      height: 100%;
       border: none;
-      display: block;
     }
 
     /* SERVICES */
 
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
-      gap: 25px;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
     }
 
-    .service {
+    .service-card {
       background: white;
-      padding: 30px;
-      border-radius: 18px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.06);
+      padding: 28px 22px;
+      border-radius: 17px;
+      border: 1px solid #e5ebe7;
+      text-align: center;
+      box-shadow: 0 7px 20px rgba(0,0,0,0.04);
     }
 
     .service-icon {
-      font-size: 34px;
-      margin-bottom: 15px;
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 17px;
+      border-radius: 17px;
+      background: #e7f1ec;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
     }
 
-    .service h3 {
-      color: #163b35;
-      margin-bottom: 10px;
+    .service-card h3 {
+      color: #193e36;
+      margin-bottom: 8px;
+      font-size: 18px;
     }
 
-    .service p {
-      color: #69736f;
+    .service-card p {
+      color: #718079;
       font-size: 14px;
     }
 
     /* FORMS */
 
-    .form-section {
+    .forms-section {
       background: #fff;
     }
 
-    .form-container {
-      max-width: 900px;
-      margin: auto;
-      background: #f7f8f7;
-      padding: 35px;
-      border-radius: 22px;
-    }
-
-    .form-container h3 {
-      color: #163b35;
-      font-size: 25px;
-      margin-bottom: 10px;
-    }
-
-    .form-container > p {
-      color: #68716e;
-      margin-bottom: 25px;
-    }
-
-    .form-grid {
+    .forms-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 16px;
+      gap: 30px;
     }
 
-    .full {
-      grid-column: 1 / -1;
+    .form-card {
+      background: #f7f9f7;
+      border: 1px solid #e2e9e4;
+      border-radius: 20px;
+      padding: 30px;
     }
 
-    label {
-      display: block;
-      font-weight: bold;
-      color: #394743;
-      margin-bottom: 7px;
+    .form-card h3 {
+      color: #173c35;
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .form-card > p {
+      color: #718079;
       font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .form-group {
+      margin-bottom: 12px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: #40524b;
+      margin-bottom: 5px;
     }
 
     textarea {
-      min-height: 120px;
+      min-height: 115px;
       resize: vertical;
-    }
-
-    .form-button {
-      margin-top: 20px;
-    }
-
-    .success {
-      display: none;
-      margin-top: 20px;
-      background: #e5f4eb;
-      color: #205b39;
-      padding: 15px;
-      border-radius: 10px;
-    }
-
-    /* VISIT */
-
-    .visit {
-      background:
-        linear-gradient(rgba(22,59,53,0.93), rgba(22,59,53,0.93)),
-        url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1600&q=85")
-        center/cover;
-      color: white;
-    }
-
-    .visit-content {
-      max-width: 900px;
-      margin: auto;
-      text-align: center;
-    }
-
-    .visit h2 {
-      font-size: 42px;
-      margin-bottom: 15px;
-    }
-
-    .visit p {
-      color: #e1e8e5;
-      margin-bottom: 30px;
-    }
-
-    /* ABOUT */
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    .about-image {
-      height: 480px;
-      border-radius: 22px;
-      overflow: hidden;
-    }
-
-    .about-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .about-text h2 {
-      font-size: 40px;
-      color: #163b35;
-      margin-bottom: 20px;
-    }
-
-    .about-text p {
-      color: #68736f;
-      margin-bottom: 15px;
-    }
-
-    .checks {
-      margin-top: 20px;
-    }
-
-    .check {
-      margin: 10px 0;
-      font-weight: bold;
-      color: #40514d;
     }
 
     /* AGENDA */
 
     .agenda {
-      background: #f0f3f1;
-      text-align: center;
+      background:
+        linear-gradient(135deg, rgba(23,60,53,0.96), rgba(31,107,91,0.93)),
+        url("https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80")
+        center/cover;
+      color: white;
     }
 
     .agenda-box {
-      max-width: 800px;
+      max-width: 850px;
       margin: auto;
-      background: white;
-      border-radius: 20px;
-      padding: 40px;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.07);
+      text-align: center;
+      padding: 55px 25px;
     }
 
     .agenda-icon {
@@ -530,76 +521,153 @@
     }
 
     .agenda h2 {
-      color: #163b35;
-      margin-bottom: 12px;
+      font-size: clamp(30px, 4vw, 44px);
+      margin-bottom: 14px;
     }
 
     .agenda p {
-      color: #6c7672;
+      color: #e1eeea;
+      max-width: 650px;
+      margin: 0 auto 27px;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 55px;
+      align-items: center;
+    }
+
+    .about-image {
+      border-radius: 23px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.13);
+    }
+
+    .about-image img {
+      height: 470px;
+      object-fit: cover;
+    }
+
+    .about-text span {
+      color: #1f6b5b;
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .about-text h2 {
+      font-size: 40px;
+      line-height: 1.15;
+      color: #173c35;
+      margin: 10px 0 17px;
+    }
+
+    .about-text p {
+      color: #697771;
+      margin-bottom: 16px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 22px;
+    }
+
+    .check-list li {
+      margin-bottom: 11px;
+      color: #41524c;
+      font-weight: 600;
+    }
+
+    /* CTA */
+
+    .final-cta {
+      background: #f0f5f1;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      color: #173c35;
+      font-size: 38px;
+      margin-bottom: 12px;
+    }
+
+    .final-cta p {
+      color: #6e7c76;
       margin-bottom: 25px;
     }
 
     /* FOOTER */
 
     footer {
-      background: #102d29;
-      color: white;
-      padding: 50px 22px 25px;
+      background: #102c26;
+      color: #dce8e3;
+      padding: 50px 0 25px;
     }
 
     .footer-grid {
-      max-width: 1200px;
-      margin: auto;
       display: grid;
       grid-template-columns: 2fr 1fr 1fr;
       gap: 40px;
+      margin-bottom: 40px;
     }
 
-    footer h3 {
-      margin-bottom: 15px;
+    .footer-logo {
+      font-size: 23px;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 12px;
     }
 
-    footer p,
-    footer a {
-      color: #bfcac6;
+    footer p {
+      color: #aebeb7;
+      font-size: 14px;
+      max-width: 430px;
+    }
+
+    footer h4 {
+      color: white;
+      margin-bottom: 13px;
+    }
+
+    footer ul {
+      list-style: none;
+    }
+
+    footer li {
+      margin-bottom: 8px;
+      color: #aebeb7;
       font-size: 14px;
     }
 
-    footer a {
-      display: block;
-      margin-bottom: 8px;
-    }
-
     .copyright {
-      max-width: 1200px;
-      margin: 40px auto 0;
+      border-top: 1px solid rgba(255,255,255,0.1);
       padding-top: 20px;
-      border-top: 1px solid rgba(255,255,255,0.12);
-      color: #9eaaa6;
-      font-size: 13px;
       text-align: center;
+      color: #8ea099;
+      font-size: 12px;
     }
 
-    /* FLOATING AI */
+    /* AI BUTTON */
 
     .ai-button {
       position: fixed;
-      right: 22px;
-      bottom: 22px;
-      width: 68px;
-      height: 68px;
+      right: 20px;
+      bottom: 20px;
+      width: 66px;
+      height: 66px;
       border-radius: 50%;
-      background: #d9b56d;
-      color: white;
       border: 4px solid white;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
-      z-index: 2000;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
+      background: linear-gradient(135deg, #1f6b5b, #62a78d);
+      color: white;
+      font-size: 29px;
       cursor: pointer;
-      transition: 0.25s;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.22);
+      z-index: 2000;
+      transition: 0.2s;
     }
 
     .ai-button:hover {
@@ -608,47 +676,53 @@
 
     .ai-label {
       position: fixed;
-      right: 95px;
-      bottom: 38px;
-      background: #163b35;
+      right: 94px;
+      bottom: 32px;
+      background: #173c35;
       color: white;
-      padding: 9px 14px;
-      border-radius: 20px;
-      font-size: 13px;
+      padding: 9px 13px;
+      border-radius: 9px;
+      font-size: 12px;
+      font-weight: 700;
       z-index: 1999;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
     }
 
     /* RESPONSIVE */
 
-    @media (max-width: 900px) {
-
+    @media (max-width: 950px) {
       nav {
         display: none;
       }
 
-      .search-grid {
-        grid-template-columns: 1fr 1fr;
+      .property-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
-      .property-grid,
       .services-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .search-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
 
       .about-grid {
         grid-template-columns: 1fr;
       }
 
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
+      .forms-grid {
+        grid-template-columns: 1fr;
       }
     }
 
-    @media (max-width: 600px) {
-
+    @media (max-width: 650px) {
       .hero {
-        min-height: 600px;
+        min-height: 610px;
+      }
+
+      .hero-content {
+        padding: 60px 0;
       }
 
       .hero h1 {
@@ -656,42 +730,50 @@
       }
 
       .hero p {
-        font-size: 17px;
+        font-size: 16px;
       }
 
-      .search-box {
-        margin: -30px 15px 40px;
-        padding: 22px;
+      section {
+        padding: 60px 0;
       }
 
-      .search-grid,
       .property-grid,
       .services-grid,
-      .form-grid,
+      .search-grid,
+      .forms-grid,
       .footer-grid {
         grid-template-columns: 1fr;
       }
 
-      .section-title h2,
-      .about-text h2,
-      .visit h2 {
-        font-size: 32px;
+      .form-row {
+        grid-template-columns: 1fr;
       }
 
-      section {
-        padding: 60px 18px;
+      .property-image {
+        height: 230px;
       }
 
-      .video-wrapper iframe {
-        height: 300px;
+      .about-image img {
+        height: 330px;
       }
 
-      .form-container {
-        padding: 22px;
+      .about-text h2 {
+        font-size: 31px;
+      }
+
+      .final-cta h2 {
+        font-size: 30px;
       }
 
       .ai-label {
         display: none;
+      }
+
+      .ai-button {
+        width: 60px;
+        height: 60px;
+        right: 16px;
+        bottom: 16px;
       }
     }
   </style>
@@ -702,18 +784,21 @@
   <!-- HEADER -->
 
   <header>
-    <div class="nav">
+    <div class="container nav">
 
       <a href="#inicio" class="logo">
-        <span class="logo-icon">🏠</span>
-        Bages Living
+        <div class="logo-icon">🏠</div>
+        <div>
+          Bages Living
+          <small>INMOBILIARIA</small>
+        </div>
       </a>
 
       <nav>
-        <a href="#alquileres">Alquileres</a>
+        <a href="#viviendas">Viviendas</a>
         <a href="#servicios">Servicios</a>
-        <a href="#incidencias">Incidencias</a>
-        <a href="#visitas">Visitas</a>
+        <a href="#incidencias">Inquilinos</a>
+        <a href="#agenda">Visitas</a>
         <a href="#contacto" class="nav-button">Contactar</a>
       </nav>
 
@@ -725,28 +810,34 @@
 
   <section class="hero" id="inicio">
 
-    <div class="hero-content">
+    <div class="container">
 
-      <span class="tag">🏡 Especialistas en alquiler</span>
+      <div class="hero-content">
 
-      <h1>
-        Encuentra un lugar donde sentirte en casa
-      </h1>
+        <span class="eyebrow">
+          🏡 Alquileres en Manresa y Bages
+        </span>
 
-      <p>
-        Viviendas seleccionadas, atención cercana y un proceso de alquiler sencillo,
-        transparente y acompañado en todo momento.
-      </p>
+        <h1>
+          Encuentra el lugar donde empieza tu próxima etapa.
+        </h1>
 
-      <div class="buttons">
+        <p>
+          Viviendas de alquiler seleccionadas, atención cercana y una gestión
+          sencilla desde el primer contacto hasta tu visita.
+        </p>
 
-        <a href="#alquileres" class="button button-primary">
-          Ver viviendas
-        </a>
+        <div class="hero-buttons">
 
-        <a href="#visitas" class="button button-secondary">
-          📅 Solicitar una visita
-        </a>
+          <a href="#viviendas" class="button button-primary">
+            🔎 Ver viviendas
+          </a>
+
+          <a href="#agenda" class="button button-light">
+            📅 Reservar una visita
+          </a>
+
+        </div>
 
       </div>
 
@@ -759,42 +850,56 @@
 
   <div class="search-box">
 
-    <h2>🔎 ¿Qué vivienda estás buscando?</h2>
+    <div class="container">
 
-    <div class="search-grid">
+      <div class="search-inner">
 
-      <select>
-        <option>Localización</option>
-        <option>Manresa</option>
-        <option>Sant Fruitós de Bages</option>
-        <option>Navarcles</option>
-        <option>Castellnou de Bages</option>
-      </select>
+        <div class="search-title">
+          <h2>🔎 Busca tu próxima vivienda</h2>
+          <p>Indícanos qué estás buscando y descubre nuestras opciones.</p>
+        </div>
 
-      <select>
-        <option>Tipo de vivienda</option>
-        <option>Piso</option>
-        <option>Casa</option>
-        <option>Ático</option>
-        <option>Chalet</option>
-      </select>
+        <div class="search-grid">
 
-      <select>
-        <option>Habitaciones</option>
-        <option>1 habitación</option>
-        <option>2 habitaciones</option>
-        <option>3 habitaciones</option>
-        <option>4+ habitaciones</option>
-      </select>
+          <select id="tipoBusqueda">
+            <option value="">Tipo de vivienda</option>
+            <option>Piso</option>
+            <option>Casa</option>
+            <option>Ático</option>
+            <option>Duplex</option>
+          </select>
 
-      <select>
-        <option>Presupuesto máximo</option>
-        <option>700 €</option>
-        <option>900 €</option>
-        <option>1.100 €</option>
-        <option>1.300 €</option>
-        <option>1.500 €</option>
-      </select>
+          <select id="zonaBusqueda">
+            <option value="">Zona</option>
+            <option>Manresa</option>
+            <option>Sant Fruitós de Bages</option>
+            <option>Navarcles</option>
+            <option>Castellnou de Bages</option>
+          </select>
+
+          <select id="habitacionesBusqueda">
+            <option value="">Habitaciones</option>
+            <option>1 habitación</option>
+            <option>2 habitaciones</option>
+            <option>3 habitaciones</option>
+            <option>4 o más</option>
+          </select>
+
+          <button
+            class="button button-primary"
+            onclick="buscarVivienda()"
+          >
+            Buscar vivienda
+          </button>
+
+        </div>
+
+        <p
+          id="resultadoBusqueda"
+          style="margin-top:15px; color:#1f6b5b; font-weight:700;"
+        ></p>
+
+      </div>
 
     </div>
 
@@ -803,18 +908,19 @@
 
   <!-- PROPERTIES -->
 
-  <section class="properties" id="alquileres">
+  <section class="properties" id="viviendas">
 
     <div class="container">
 
-      <div class="section-title">
+      <div class="section-heading">
 
         <span>Viviendas disponibles</span>
 
-        <h2>Encuentra tu próximo hogar</h2>
+        <h2>Encuentra un hogar que encaje contigo</h2>
 
         <p>
-          Algunas de nuestras viviendas disponibles para alquiler.
+          Estas viviendas forman parte de nuestra demostración.
+          En un proyecto real se conectarían con el catálogo de la inmobiliaria.
         </p>
 
       </div>
@@ -823,23 +929,22 @@
       <div class="property-grid">
 
 
-        <!-- INMUEBLE 1 -->
+        <!-- PROPERTY 1 -->
 
         <article class="property-card">
 
           <div class="property-image">
 
             <img
-              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85"
-              alt="Piso moderno en alquiler">
+              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85"
+              alt="Piso moderno en Manresa"
+            >
 
-            <span class="available">Disponible</span>
-
-            <span class="price">950 €/mes</span>
+            <span class="tag">Disponible</span>
 
           </div>
 
-          <div class="property-info">
+          <div class="property-body">
 
             <h3>Piso moderno y luminoso</h3>
 
@@ -847,14 +952,23 @@
               📍 Manresa · Zona centro
             </div>
 
-            <div class="details">
-              <span>🛏️ 2 hab.</span>
-              <span>🚿 1 baño</span>
-              <span>📐 78 m²</span>
+            <div class="property-info">
+              <span>🛏 3 hab.</span>
+              <span>🚿 2 baños</span>
+              <span>📐 92 m²</span>
             </div>
 
-            <a href="#visitas" class="button button-primary">
-              Solicitar visita
+            <div class="price">
+              895 €/mes
+            </div>
+
+            <a
+              href="https://calendly.com/vrbempresa-ia/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              📅 Solicitar visita
             </a>
 
           </div>
@@ -862,116 +976,46 @@
         </article>
 
 
-        <!-- INMUEBLE 2 -->
+        <!-- PROPERTY 2 -->
 
         <article class="property-card">
 
           <div class="property-image">
 
             <img
-              src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=85"
-              alt="Apartamento en alquiler">
+              src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"
+              alt="Apartamento moderno"
+            >
 
-            <span class="available">Disponible</span>
-
-            <span class="price">1.150 €/mes</span>
+            <span class="tag">Nuevo</span>
 
           </div>
 
-          <div class="property-info">
+          <div class="property-body">
 
-            <h3>Apartamento con terraza</h3>
+            <h3>Apartamento acogedor</h3>
 
             <div class="location">
               📍 Sant Fruitós de Bages
             </div>
 
-            <div class="details">
-              <span>🛏️ 3 hab.</span>
-              <span>🚿 2 baños</span>
-              <span>📐 96 m²</span>
-            </div>
-
-            <a href="#visitas" class="button button-primary">
-              Solicitar visita
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- INMUEBLE 3 -->
-
-        <article class="property-card">
-
-          <div class="property-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=85"
-              alt="Casa en alquiler">
-
-            <span class="available">Disponible</span>
-
-            <span class="price">1.350 €/mes</span>
-
-          </div>
-
-          <div class="property-info">
-
-            <h3>Casa con jardín privado</h3>
-
-            <div class="location">
-              📍 Navarcles · Zona tranquila
-            </div>
-
-            <div class="details">
-              <span>🛏️ 4 hab.</span>
-              <span>🚿 2 baños</span>
-              <span>📐 145 m²</span>
-            </div>
-
-            <a href="#visitas" class="button button-primary">
-              Solicitar visita
-            </a>
-
-          </div>
-
-        </article>
-
-
-        <!-- INMUEBLE 4 -->
-
-        <article class="property-card">
-
-          <div class="property-image">
-
-            <img
-              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=85"
-              alt="Piso elegante">
-
-            <span class="available">Disponible</span>
-
-            <span class="price">890 €/mes</span>
-
-          </div>
-
-          <div class="property-info">
-
-            <h3>Piso reformado</h3>
-
-            <div class="location">
-              📍 Manresa · Zona residencial
-            </div>
-
-            <div class="details">
-              <span>🛏️ 2 hab.</span>
+            <div class="property-info">
+              <span>🛏 2 hab.</span>
               <span>🚿 1 baño</span>
-              <span>📐 70 m²</span>
+              <span>📐 68 m²</span>
             </div>
 
-            <a href="#visitas" class="button button-primary">
-              Solicitar visita
+            <div class="price">
+              760 €/mes
+            </div>
+
+            <a
+              href="https://calendly.com/vrbempresa-ia/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              📅 Solicitar visita
             </a>
 
           </div>
@@ -979,38 +1023,46 @@
         </article>
 
 
-        <!-- INMUEBLE 5 -->
+        <!-- PROPERTY 3 -->
 
         <article class="property-card">
 
           <div class="property-image">
 
             <img
-              src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=85"
-              alt="Apartamento luminoso">
+              src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=85"
+              alt="Casa con terraza"
+            >
 
-            <span class="available">Disponible</span>
-
-            <span class="price">1.050 €/mes</span>
+            <span class="tag">Destacada</span>
 
           </div>
 
-          <div class="property-info">
+          <div class="property-body">
 
-            <h3>Ático luminoso</h3>
+            <h3>Casa con terraza</h3>
 
             <div class="location">
-              📍 Santpedor
+              📍 Navarcles · Bages
             </div>
 
-            <div class="details">
-              <span>🛏️ 3 hab.</span>
+            <div class="property-info">
+              <span>🛏 4 hab.</span>
               <span>🚿 2 baños</span>
-              <span>📐 92 m²</span>
+              <span>📐 135 m²</span>
             </div>
 
-            <a href="#visitas" class="button button-primary">
-              Solicitar visita
+            <div class="price">
+              1.150 €/mes
+            </div>
+
+            <a
+              href="https://calendly.com/vrbempresa-ia/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              📅 Solicitar visita
             </a>
 
           </div>
@@ -1018,38 +1070,140 @@
         </article>
 
 
-        <!-- INMUEBLE 6 -->
+        <!-- PROPERTY 4 -->
 
         <article class="property-card">
 
           <div class="property-image">
 
             <img
-              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
-              alt="Casa familiar">
+              src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=85"
+              alt="Ático moderno"
+            >
 
-            <span class="available">Disponible</span>
-
-            <span class="price">1.400 €/mes</span>
+            <span class="tag">Disponible</span>
 
           </div>
 
-          <div class="property-info">
+          <div class="property-body">
 
-            <h3>Casa familiar con terraza</h3>
+            <h3>Ático con terraza</h3>
+
+            <div class="location">
+              📍 Manresa · Zona universitaria
+            </div>
+
+            <div class="property-info">
+              <span>🛏 2 hab.</span>
+              <span>🚿 1 baño</span>
+              <span>📐 75 m²</span>
+            </div>
+
+            <div class="price">
+              850 €/mes
+            </div>
+
+            <a
+              href="https://calendly.com/vrbempresa-ia/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              📅 Solicitar visita
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROPERTY 5 -->
+
+        <article class="property-card">
+
+          <div class="property-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85"
+              alt="Piso familiar"
+            >
+
+            <span class="tag">Familiar</span>
+
+          </div>
+
+          <div class="property-body">
+
+            <h3>Piso familiar reformado</h3>
+
+            <div class="location">
+              📍 Manresa · Valldaura
+            </div>
+
+            <div class="property-info">
+              <span>🛏 3 hab.</span>
+              <span>🚿 2 baños</span>
+              <span>📐 98 m²</span>
+            </div>
+
+            <div class="price">
+              925 €/mes
+            </div>
+
+            <a
+              href="https://calendly.com/vrbempresa-ia/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              📅 Solicitar visita
+            </a>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROPERTY 6 -->
+
+        <article class="property-card">
+
+          <div class="property-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85"
+              alt="Casa moderna"
+            >
+
+            <span class="tag">Premium</span>
+
+          </div>
+
+          <div class="property-body">
+
+            <h3>Casa moderna independiente</h3>
 
             <div class="location">
               📍 Castellnou de Bages
             </div>
 
-            <div class="details">
-              <span>🛏️ 4 hab.</span>
+            <div class="property-info">
+              <span>🛏 4 hab.</span>
               <span>🚿 2 baños</span>
               <span>📐 160 m²</span>
             </div>
 
-            <a href="#visitas" class="button button-primary">
-              Solicitar visita
+            <div class="price">
+              1.350 €/mes
+            </div>
+
+            <a
+              href="https://calendly.com/vrbempresa-ia/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-primary"
+            >
+              📅 Solicitar visita
             </a>
 
           </div>
@@ -1069,29 +1223,23 @@
 
     <div class="container">
 
-      <div class="section-title">
+      <div class="section-heading">
 
-        <span>Conoce nuestras viviendas</span>
+        <span>Conoce Bages Living</span>
 
-        <h2>Haz una visita antes de venir</h2>
+        <h2>Tu próxima vivienda puede empezar aquí</h2>
 
         <p>
-          Presentamos las viviendas con imágenes y vídeo para que puedas conocer
-          cada espacio antes de solicitar tu visita.
+          Una experiencia inmobiliaria sencilla, cercana y digital.
         </p>
 
       </div>
 
       <div class="video-wrapper">
 
-        <!--
-          AQUÍ PONDREMOS EL VÍDEO PROFESIONAL DEFINITIVO.
-          Cuando tengamos el vídeo elegido, cambiaremos únicamente la URL del iframe.
-        -->
-
         <iframe
-          src="https://player.vimeo.com/video/1167285180"
-          title="Tour de vivienda"
+          src="https://player.vimeo.com/video/76979871"
+          title="Vídeo inmobiliario"
           allow="autoplay; fullscreen; picture-in-picture"
           allowfullscreen>
         </iframe>
@@ -1109,15 +1257,14 @@
 
     <div class="container">
 
-      <div class="section-title">
+      <div class="section-heading">
 
-        <span>Mucho más que enseñar viviendas</span>
+        <span>Servicios</span>
 
-        <h2>Te acompañamos durante todo el alquiler</h2>
+        <h2>Mucho más que enseñar viviendas</h2>
 
         <p>
-          Nuestro objetivo es facilitar tanto la búsqueda de vivienda como la gestión
-          posterior del alquiler.
+          Acompañamos al cliente durante todo el proceso de alquiler.
         </p>
 
       </div>
@@ -1125,46 +1272,58 @@
 
       <div class="services-grid">
 
-        <div class="service">
+
+        <div class="service-card">
 
           <div class="service-icon">🏠</div>
 
-          <h3>Encuentra tu vivienda</h3>
+          <h3>Alquiler</h3>
 
           <p>
-            Filtramos las viviendas según tus necesidades, presupuesto,
-            ubicación y características.
+            Te ayudamos a encontrar una vivienda que se adapte a tus necesidades.
           </p>
 
         </div>
 
 
-        <div class="service">
+        <div class="service-card">
 
           <div class="service-icon">📅</div>
 
-          <h3>Reserva tu visita</h3>
+          <h3>Visitas</h3>
 
           <p>
-            Solicita una visita y elige el día y la hora que mejor te vaya
-            mediante nuestro sistema de agenda.
+            Reserva día y hora online para visitar las viviendas disponibles.
           </p>
 
         </div>
 
 
-        <div class="service">
+        <div class="service-card">
 
-          <div class="service-icon">🤖</div>
+          <div class="service-icon">🤝</div>
 
-          <h3>Asistencia con IA</h3>
+          <h3>Atención cercana</h3>
 
           <p>
-            Nuestro asistente virtual puede ayudarte a encontrar viviendas,
-            resolver dudas y recoger solicitudes.
+            Resolvemos tus dudas y te acompañamos durante el proceso.
           </p>
 
         </div>
+
+
+        <div class="service-card">
+
+          <div class="service-icon">🔧</div>
+
+          <h3>Atención al inquilino</h3>
+
+          <p>
+            Puedes comunicar incidencias y consultas relacionadas con tu vivienda.
+          </p>
+
+        </div>
+
 
       </div>
 
@@ -1173,300 +1332,260 @@
   </section>
 
 
-  <!-- INCIDENT FORM -->
+  <!-- FORMS -->
 
-  <section class="form-section" id="incidencias">
+  <section class="forms-section" id="incidencias">
 
     <div class="container">
 
-      <div class="section-title">
+      <div class="section-heading">
 
-        <span>Área de inquilinos</span>
+        <span>Atención al inquilino</span>
 
-        <h2>¿Tienes una incidencia en tu vivienda?</h2>
+        <h2>¿Necesitas comunicar una incidencia?</h2>
 
         <p>
-          Comunícanos el problema y recopilaremos la información necesaria
-          para poder gestionarlo.
+          Envíanos los datos para que podamos revisar tu caso y determinar los
+          siguientes pasos.
         </p>
 
       </div>
 
 
-      <div class="form-container">
-
-        <h3>🔧 Comunicar una avería</h3>
-
-        <p>
-          Por ejemplo: caldera, fuga de agua, electricidad, persiana,
-          cerradura, aire acondicionado u otra incidencia.
-        </p>
+      <div class="forms-grid">
 
 
-        <form id="incidentForm">
+        <!-- INCIDENT FORM -->
 
-          <div class="form-grid">
+        <div class="form-card">
 
-            <div>
-              <label>Nombre y apellidos</label>
-              <input type="text" required placeholder="Tu nombre">
-            </div>
+          <h3>🔧 Comunicar una incidencia</h3>
 
-            <div>
-              <label>Teléfono</label>
-              <input type="tel" required placeholder="600 000 000">
-            </div>
-
-            <div>
-              <label>Email</label>
-              <input type="email" required placeholder="tu@email.com">
-            </div>
-
-            <div>
-              <label>Dirección de la vivienda</label>
-              <input type="text" required placeholder="Dirección">
-            </div>
-
-            <div>
-              <label>Tipo de incidencia</label>
-
-              <select required>
-                <option value="">Selecciona una opción</option>
-                <option>🔥 Caldera / calefacción</option>
-                <option>💧 Fuga de agua</option>
-                <option>⚡ Electricidad</option>
-                <option>🚪 Cerradura / puerta</option>
-                <option>❄️ Aire acondicionado</option>
-                <option>🪟 Ventana / persiana</option>
-                <option>🔧 Otra avería</option>
-              </select>
-
-            </div>
-
-            <div>
-
-              <label>¿La incidencia impide utilizar la vivienda normalmente?</label>
-
-              <select required>
-                <option value="">Selecciona</option>
-                <option>Sí</option>
-                <option>No</option>
-                <option>No estoy seguro/a</option>
-              </select>
-
-            </div>
-
-
-            <div class="full">
-
-              <label>Describe lo ocurrido</label>
-
-              <textarea
-                required
-                placeholder="Explícanos qué ha ocurrido, desde cuándo y cualquier detalle importante..."
-              ></textarea>
-
-            </div>
-
-
-            <div class="full">
-
-              <label>¿Existe riesgo de daños mayores?</label>
-
-              <select required>
-
-                <option value="">Selecciona</option>
-
-                <option>Sí, es urgente</option>
-
-                <option>No</option>
-
-                <option>No estoy seguro/a</option>
-
-              </select>
-
-            </div>
-
-          </div>
-
-
-          <p style="margin-top:20px;font-size:13px;color:#69736f;">
-
-            ℹ️ La responsabilidad de una avería puede depender del origen de la incidencia,
-            del contrato de alquiler y de las circunstancias concretas. La inmobiliaria
-            revisará la información antes de determinar cómo proceder.
-
+          <p>
+            Utiliza este formulario para informar de una avería o problema
+            relacionado con la vivienda.
           </p>
 
+          <form onsubmit="enviarIncidencia(event)">
 
-          <button class="button button-primary form-button" type="submit">
+            <div class="form-row">
 
-            Enviar incidencia
+              <div class="form-group">
 
-          </button>
+                <label>Nombre</label>
 
+                <input
+                  type="text"
+                  id="incNombre"
+                  placeholder="Tu nombre"
+                  required
+                >
 
-          <div class="success" id="incidentSuccess">
+              </div>
 
-            ✅ Hemos recibido tu incidencia. La inmobiliaria revisará la información
-            facilitada y contactará contigo.
+              <div class="form-group">
 
-          </div>
+                <label>Teléfono</label>
 
-        </form>
+                <input
+                  type="tel"
+                  id="incTelefono"
+                  placeholder="Tu teléfono"
+                  required
+                >
 
-      </div>
-
-    </div>
-
-  </section>
-
-
-  <!-- VISIT QUESTIONNAIRE -->
-
-  <section id="visitas">
-
-    <div class="container">
-
-      <div class="section-title">
-
-        <span>Solicita una visita</span>
-
-        <h2>Cuéntanos qué vivienda te interesa</h2>
-
-        <p>
-          Recopilamos algunos datos para preparar mejor tu visita.
-        </p>
-
-      </div>
-
-
-      <div class="form-container">
-
-        <form id="visitForm">
-
-          <div class="form-grid">
-
-            <div>
-
-              <label>Nombre y apellidos</label>
-
-              <input
-                type="text"
-                required
-                placeholder="Tu nombre">
+              </div>
 
             </div>
 
 
-            <div>
-
-              <label>Teléfono</label>
-
-              <input
-                type="tel"
-                required
-                placeholder="600 000 000">
-
-            </div>
-
-
-            <div>
+            <div class="form-group">
 
               <label>Email</label>
 
               <input
                 type="email"
+                id="incEmail"
+                placeholder="tu@email.com"
                 required
-                placeholder="tu@email.com">
+              >
 
             </div>
 
 
-            <div>
+            <div class="form-group">
 
-              <label>Vivienda que te interesa</label>
+              <label>Dirección de la vivienda</label>
 
-              <select required>
+              <input
+                type="text"
+                id="incDireccion"
+                placeholder="Dirección"
+                required
+              >
 
-                <option value="">Selecciona</option>
+            </div>
 
-                <option>Piso moderno y luminoso</option>
 
-                <option>Apartamento con terraza</option>
+            <div class="form-group">
 
-                <option>Casa con jardín privado</option>
+              <label>Tipo de incidencia</label>
 
-                <option>Piso reformado</option>
+              <select id="incTipo" required>
 
-                <option>Ático luminoso</option>
-
-                <option>Casa familiar con terraza</option>
+                <option value="">Selecciona una opción</option>
+                <option>Caldera / calefacción</option>
+                <option>Agua</option>
+                <option>Electricidad</option>
+                <option>Electrodoméstico</option>
+                <option>Puerta / cerradura</option>
+                <option>Humedades</option>
+                <option>Otra incidencia</option>
 
               </select>
 
             </div>
 
 
-            <div>
+            <div class="form-group">
 
-              <label>¿Cuántas personas vivirían?</label>
-
-              <select>
-
-                <option>1 persona</option>
-                <option>2 personas</option>
-                <option>3 personas</option>
-                <option>4 personas</option>
-                <option>5 o más</option>
-
-              </select>
-
-            </div>
-
-
-            <div>
-
-              <label>¿Tienes mascotas?</label>
-
-              <select>
-
-                <option>No</option>
-                <option>Sí</option>
-                <option>Prefiero comentarlo en la visita</option>
-
-              </select>
-
-            </div>
-
-
-            <div class="full">
-
-              <label>¿Hay algo que debamos saber?</label>
+              <label>Descripción</label>
 
               <textarea
-                placeholder="Cuéntanos tus necesidades o cualquier duda..."
+                id="incDescripcion"
+                placeholder="Explícanos qué ha ocurrido..."
+                required
               ></textarea>
 
             </div>
 
-          </div>
+
+            <button
+              type="submit"
+              class="button button-primary"
+            >
+              📩 Enviar incidencia
+            </button>
+
+          </form>
+
+        </div>
 
 
-          <button class="button button-primary form-button" type="submit">
+        <!-- VISIT QUESTIONNAIRE -->
 
-            Continuar y reservar visita 📅
+        <div class="form-card">
 
-          </button>
+          <h3>🏡 Solicitar información</h3>
+
+          <p>
+            Cuéntanos qué vivienda estás buscando y podremos orientarte mejor.
+          </p>
+
+          <form onsubmit="enviarSolicitud(event)">
+
+            <div class="form-group">
+
+              <label>Nombre</label>
+
+              <input
+                type="text"
+                id="solNombre"
+                placeholder="Tu nombre"
+                required
+              >
+
+            </div>
 
 
-          <div class="success" id="visitSuccess">
+            <div class="form-group">
 
-            ✅ Perfecto. Ahora podrás elegir el día y la hora de tu visita.
+              <label>Email</label>
 
-          </div>
+              <input
+                type="email"
+                id="solEmail"
+                placeholder="tu@email.com"
+                required
+              >
 
-        </form>
+            </div>
+
+
+            <div class="form-group">
+
+              <label>Teléfono</label>
+
+              <input
+                type="tel"
+                id="solTelefono"
+                placeholder="Tu teléfono"
+                required
+              >
+
+            </div>
+
+
+            <div class="form-row">
+
+              <div class="form-group">
+
+                <label>Presupuesto aproximado</label>
+
+                <select id="solPresupuesto">
+
+                  <option value="">Selecciona</option>
+                  <option>Hasta 700 €</option>
+                  <option>700 - 900 €</option>
+                  <option>900 - 1.100 €</option>
+                  <option>Más de 1.100 €</option>
+
+                </select>
+
+              </div>
+
+
+              <div class="form-group">
+
+                <label>Habitaciones</label>
+
+                <select id="solHabitaciones">
+
+                  <option value="">Selecciona</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4 o más</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+
+            <div class="form-group">
+
+              <label>¿Qué necesitas?</label>
+
+              <textarea
+                id="solNecesidad"
+                placeholder="Cuéntanos qué vivienda buscas..."
+              ></textarea>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="button button-primary"
+            >
+              📝 Enviar solicitud
+            </button>
+
+          </form>
+
+        </div>
 
       </div>
 
@@ -1477,32 +1596,33 @@
 
   <!-- AGENDA -->
 
-  <section class="agenda">
+  <section class="agenda" id="agenda">
 
     <div class="container">
 
       <div class="agenda-box">
 
-        <div class="agenda-icon">📅</div>
+        <div class="agenda-icon">
+          📅
+        </div>
 
-        <h2>Elige día y hora para tu visita</h2>
+        <h2>
+          Elige día y hora para tu visita
+        </h2>
 
         <p>
-          Aquí conectaremos posteriormente la agenda de Bages Living para que
-          el cliente pueda reservar directamente una hora disponible.
+          Selecciona directamente el día y la hora que mejor te vaya.
+          Te pediremos tus datos y recibirás la confirmación de la visita.
         </p>
 
-        <!--
-          BOTÓN DE AGENDA
 
-          Cuando creemos la agenda real cambiaremos el enlace
-          por tu enlace de Calendly / Google Calendar / otra agenda.
-        -->
+        <!-- CALENDLY REAL -->
 
         <a
-          href="#"
+          href="https://calendly.com/vrbempresa-ia/30min"
+          target="_blank"
+          rel="noopener noreferrer"
           class="button button-primary"
-          onclick="alert('Aquí conectaremos la agenda real de Bages Living.'); return false;"
         >
           📅 Abrir agenda de visitas
         </a>
@@ -1516,50 +1636,52 @@
 
   <!-- ABOUT -->
 
-  <section id="contacto">
+  <section>
 
     <div class="container">
 
       <div class="about-grid">
 
+
         <div class="about-image">
 
           <img
-            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1200&q=85"
-            alt="Interior de una vivienda">
+            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1000&q=85"
+            alt="Vivienda moderna"
+          >
 
         </div>
 
 
         <div class="about-text">
 
-          <h2>Alquilar puede ser mucho más sencillo</h2>
+          <span>Sobre Bages Living</span>
+
+          <h2>
+            Una inmobiliaria pensada para hacerte la vida más fácil.
+          </h2>
 
           <p>
-            En Bages Living queremos ofrecer una experiencia diferente,
-            combinando atención cercana con herramientas digitales que
-            faciliten cada paso.
+            Bages Living es una agencia inmobiliaria ficticia creada como
+            demostración de una nueva forma de gestionar el alquiler de viviendas.
           </p>
 
           <p>
-            Desde encontrar una vivienda hasta comunicar una incidencia,
-            nuestros clientes pueden realizar gran parte del proceso online.
+            El objetivo es combinar atención humana con herramientas digitales
+            para que clientes e inquilinos puedan realizar muchas gestiones
+            de forma rápida y sencilla.
           </p>
 
 
-          <div class="checks">
+          <ul class="check-list">
 
-            <div class="check">✓ Viviendas seleccionadas</div>
+            <li>✓ Información clara y cercana</li>
+            <li>✓ Solicitud de visitas online</li>
+            <li>✓ Agenda disponible 24 horas</li>
+            <li>✓ Atención al inquilino</li>
+            <li>✓ Asistente de inteligencia artificial</li>
 
-            <div class="check">✓ Atención personalizada</div>
-
-            <div class="check">✓ Solicitud de visitas online</div>
-
-            <div class="check">✓ Asistente virtual disponible</div>
-
-            <div class="check">✓ Gestión de incidencias</div>
-
-          </div>
+          </ul>
 
         </div>
 
@@ -1570,75 +1692,112 @@
   </section>
 
 
+  <!-- FINAL CTA -->
+
+  <section class="final-cta" id="contacto">
+
+    <div class="container">
+
+      <h2>
+        ¿Buscas una vivienda?
+      </h2>
+
+      <p>
+        Empieza ahora. Nuestro asistente puede ayudarte a encontrar una vivienda
+        y reservar una visita.
+      </p>
+
+      <a
+        href="https://calendly.com/vrbempresa-ia/30min"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button button-primary"
+      >
+        📅 Reservar una visita
+      </a>
+
+    </div>
+
+  </section>
+
+
   <!-- FOOTER -->
 
   <footer>
 
-    <div class="footer-grid">
+    <div class="container">
 
-      <div>
+      <div class="footer-grid">
 
-        <h3>🏠 Bages Living</h3>
 
-        <p>
-          Inmobiliaria especializada en alquileres.
-          Una demo creada para mostrar cómo una inmobiliaria
-          puede combinar web, IA y automatización.
-        </p>
+        <div>
+
+          <div class="footer-logo">
+            🏠 Bages Living
+          </div>
+
+          <p>
+            Demo inmobiliaria especializada en alquiler de viviendas
+            en Manresa y la comarca del Bages.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>Enlaces</h4>
+
+          <ul>
+            <li><a href="#viviendas">Viviendas</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#incidencias">Inquilinos</a></li>
+            <li><a href="#agenda">Reservar visita</a></li>
+          </ul>
+
+        </div>
+
+
+        <div>
+
+          <h4>Contacto</h4>
+
+          <ul>
+            <li>📍 Manresa, Barcelona</li>
+            <li>📧 info@bagesliving.es</li>
+            <li>📞 938 000 000</li>
+            <li>🤖 Asistente IA disponible</li>
+          </ul>
+
+        </div>
+
 
       </div>
 
 
-      <div>
+      <div class="copyright">
 
-        <h3>Enlaces</h3>
-
-        <a href="#alquileres">Viviendas</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#incidencias">Incidencias</a>
-        <a href="#visitas">Solicitar visita</a>
+        © 2026 Bages Living · Demo inmobiliaria · Todos los derechos reservados.
 
       </div>
-
-
-      <div>
-
-        <h3>Contacto</h3>
-
-        <p>📍 Bages, Barcelona</p>
-
-        <p>📞 600 000 000</p>
-
-        <p>✉️ hola@bagesliving.com</p>
-
-      </div>
-
-    </div>
-
-
-    <div class="copyright">
-
-      © 2026 Bages Living · Demo ficticia
 
     </div>
 
   </footer>
 
 
-  <!-- BOTÓN FLOTANTE IA -->
+  <!-- AI BUTTON -->
 
   <div class="ai-label">
     ¿Necesitas ayuda?
   </div>
 
-
   <button
     class="ai-button"
-    onclick="openAI()"
-    aria-label="Abrir asistente IA">
-
+    onclick="abrirAsistente()"
+    aria-label="Abrir asistente de inteligencia artificial"
+  >
     🤖
-
   </button>
 
 
@@ -1646,98 +1805,126 @@
 
   <script>
 
-    /*
+    /* BUSCADOR */
 
-      ASISTENTE IA
+    function buscarVivienda() {
 
-      Cuando creemos el nuevo agente de Botpress,
-      conectaremos aquí el botón.
+      const tipo = document.getElementById("tipoBusqueda").value;
+      const zona = document.getElementById("zonaBusqueda").value;
+      const habitaciones = document.getElementById("habitacionesBusqueda").value;
 
-    */
+      const resultado = document.getElementById("resultadoBusqueda");
 
-    function openAI() {
+      if (!tipo && !zona && !habitaciones) {
 
-      if (window.botpress && window.botpress.open) {
+        resultado.innerText =
+          "Selecciona al menos un criterio para realizar la búsqueda.";
+
+        return;
+      }
+
+      let texto = "🔎 Búsqueda preparada";
+
+      if (tipo) {
+        texto += " · " + tipo;
+      }
+
+      if (zona) {
+        texto += " · " + zona;
+      }
+
+      if (habitaciones) {
+        texto += " · " + habitaciones;
+      }
+
+      resultado.innerText =
+        texto + ". Nuestro asistente puede ayudarte a encontrar opciones.";
+
+    }
+
+
+    /* INCIDENCIAS */
+
+    function enviarIncidencia(event) {
+
+      event.preventDefault();
+
+      const nombre =
+        document.getElementById("incNombre").value;
+
+      const tipo =
+        document.getElementById("incTipo").value;
+
+      alert(
+        "Gracias, " +
+        nombre +
+        ". Hemos recibido la información sobre la incidencia de tipo: " +
+        tipo +
+        ". En una versión conectada, estos datos se enviarían directamente al sistema de gestión de la inmobiliaria."
+      );
+
+      event.target.reset();
+
+    }
+
+
+    /* SOLICITUD DE VIVIENDA */
+
+    function enviarSolicitud(event) {
+
+      event.preventDefault();
+
+      const nombre =
+        document.getElementById("solNombre").value;
+
+      alert(
+        "Gracias, " +
+        nombre +
+        ". Hemos recibido tu solicitud de información. En una versión conectada, el equipo de Bages Living recibiría automáticamente estos datos."
+      );
+
+      event.target.reset();
+
+    }
+
+
+    /* ASISTENTE IA */
+
+    function abrirAsistente() {
+
+      if (
+        window.botpress &&
+        typeof window.botpress.open === "function"
+      ) {
 
         window.botpress.open();
 
       } else {
 
         alert(
-          "🤖 Hola. Soy el asistente virtual de Bages Living. " +
-          "En breve podré ayudarte a encontrar una vivienda, " +
-          "resolver dudas y solicitar visitas."
+          "🤖 El asistente de Bages Living estará disponible aquí muy pronto."
         );
 
       }
 
     }
 
-
-    /* FORMULARIO DE INCIDENCIAS */
-
-    document
-      .getElementById("incidentForm")
-      .addEventListener("submit", function(event) {
-
-        event.preventDefault();
-
-        document
-          .getElementById("incidentSuccess")
-          .style.display = "block";
-
-        this.reset();
-
-      });
-
-
-    /* FORMULARIO DE VISITAS */
-
-    document
-      .getElementById("visitForm")
-      .addEventListener("submit", function(event) {
-
-        event.preventDefault();
-
-        document
-          .getElementById("visitSuccess")
-          .style.display = "block";
-
-        this.reset();
-
-        document
-          .getElementById("visitas")
-          .scrollIntoView({
-            behavior: "smooth"
-          });
-
-      });
-
   </script>
 
 
   <!--
-  ============================================================
+  ==========================================================
   BOTPRESS
-  ============================================================
+  ==========================================================
 
-  AQUÍ COLOCAREMOS EL CÓDIGO DEL NUEVO AGENTE DE BOTPRESS.
+  AQUÍ INCORPORAREMOS EL NUEVO AGENTE DE BAGES LIVING.
 
-  NO UTILIZAMOS TODAVÍA EL AGENTE DE LIMPIEZAS BRILLO BAGES.
+  NO PEGUES AQUÍ TODAVÍA EL CÓDIGO DEL AGENTE DE LIMPIEZAS.
 
-  Primero crearemos un agente específico para:
+  Cuando creemos el nuevo agente de Bages Living,
+  colocaremos aquí su código de integración.
 
-  - Buscar viviendas
-  - Filtrar por presupuesto
-  - Preguntar zona
-  - Preguntar habitaciones
-  - Preguntar mascotas
-  - Resolver dudas sobre alquiler
-  - Recoger solicitudes de visita
-  - Gestionar incidencias
-  - Derivar al personal cuando sea necesario
-
-  ============================================================
+  ==========================================================
   -->
 
 </body>
