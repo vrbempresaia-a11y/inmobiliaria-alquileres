@@ -150,3 +150,1281 @@
       border-radius: 12px;
       font-weight: 700;
       border: none;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .btn-primary {
+      background: #16a6a6;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: #108d8d;
+    }
+
+    .btn-light {
+      background: white;
+      color: #18323d;
+    }
+
+    .btn-light:hover {
+      transform: translateY(-2px);
+    }
+
+    /* SEARCH */
+
+    .search-box {
+      max-width: 1080px;
+      margin: -55px auto 0;
+      position: relative;
+      z-index: 5;
+      padding: 24px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 15px 45px rgba(15,55,65,.12);
+      border: 1px solid #e6eef0;
+    }
+
+    .search-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr auto;
+      gap: 12px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: #58717a;
+    }
+
+    .field input,
+    .field select,
+    .form-control {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid #d7e4e7;
+      border-radius: 10px;
+      padding: 0 12px;
+      background: white;
+      color: #18323d;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 90px 22px;
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: auto;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 38px;
+    }
+
+    .section-heading span {
+      color: #087f8c;
+      font-weight: 800;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.1;
+      margin: 8px 0 14px;
+    }
+
+    .section-heading p {
+      color: #647a82;
+    }
+
+    /* PROPERTIES */
+
+    .properties {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .property {
+      background: white;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid #e3ecee;
+      box-shadow: 0 8px 25px rgba(20,60,70,.06);
+      transition: .25s;
+    }
+
+    .property:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(20,60,70,.12);
+    }
+
+    .property-image {
+      height: 230px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .property-body {
+      padding: 20px;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 800;
+      color: #087f8c;
+      background: #e7f7f7;
+      border-radius: 999px;
+      padding: 5px 9px;
+      margin-bottom: 10px;
+    }
+
+    .property h3 {
+      margin-bottom: 5px;
+      font-size: 21px;
+    }
+
+    .property-location {
+      color: #71848a;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .property-info {
+      display: flex;
+      gap: 15px;
+      color: #526a73;
+      font-size: 13px;
+      margin-bottom: 17px;
+      flex-wrap: wrap;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: 800;
+      color: #18323d;
+    }
+
+    .price small {
+      font-size: 13px;
+      color: #73858b;
+      font-weight: 400;
+    }
+
+    /* VIDEO */
+
+    .video-section {
+      background: #eaf5f6;
+    }
+
+    .video-wrapper {
+      max-width: 950px;
+      margin: auto;
+      aspect-ratio: 16 / 9;
+      border-radius: 22px;
+      overflow: hidden;
+      background: #18323d;
+      box-shadow: 0 18px 45px rgba(15,55,65,.15);
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* SERVICES */
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .service {
+      background: white;
+      border: 1px solid #e2ecef;
+      border-radius: 17px;
+      padding: 25px;
+    }
+
+    .service-icon {
+      font-size: 30px;
+      margin-bottom: 13px;
+    }
+
+    .service h3 {
+      margin-bottom: 7px;
+      font-size: 18px;
+    }
+
+    .service p {
+      color: #71848a;
+      font-size: 14px;
+    }
+
+    /* FORMS */
+
+    .form-section {
+      background: white;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .form-card {
+      background: #f7fafb;
+      border: 1px solid #e0eaec;
+      padding: 28px;
+      border-radius: 20px;
+    }
+
+    .form-card h3 {
+      margin-bottom: 8px;
+      font-size: 25px;
+    }
+
+    .form-card > p {
+      color: #71848a;
+      margin-bottom: 22px;
+      font-size: 14px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    textarea.form-control {
+      padding: 12px;
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .success-message {
+      display: none;
+      background: #e6f7ed;
+      color: #237044;
+      border-radius: 10px;
+      padding: 12px;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    /* CALENDLY */
+
+    .agenda {
+      background: #18323d;
+      color: white;
+      text-align: center;
+    }
+
+    .agenda .section-heading {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .agenda .section-heading span {
+      color: #6ed6d0;
+    }
+
+    .agenda .section-heading p {
+      color: #c8d8dc;
+    }
+
+    /* ABOUT */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .about-image {
+      border-radius: 22px;
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    .about-text p {
+      color: #657b83;
+      margin-bottom: 17px;
+    }
+
+    .about-list {
+      list-style: none;
+      margin: 22px 0;
+    }
+
+    .about-list li {
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    /* CTA */
+
+    .cta {
+      background:
+        linear-gradient(120deg, rgba(8,127,140,.92), rgba(20,166,166,.88)),
+        url("https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=80")
+        center/cover;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: clamp(32px, 5vw, 50px);
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 650px;
+      margin: 0 auto 25px;
+      color: #eafafa;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #102932;
+      color: #b9cbd0;
+      padding: 45px 22px 25px;
+    }
+
+    .footer-grid {
+      max-width: 1180px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    footer h3 {
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+      font-size: 14px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    .copyright {
+      max-width: 1180px;
+      margin: 35px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,.1);
+      font-size: 12px;
+      color: #849ca3;
+    }
+
+    /* AI */
+
+    .ai-label {
+      position: fixed;
+      right: 24px;
+      bottom: 94px;
+      z-index: 9998;
+      background: white;
+      color: #18323d;
+      padding: 9px 13px;
+      border-radius: 10px;
+      box-shadow: 0 7px 25px rgba(0,0,0,.15);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .ai-button {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 9999;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      background: #087f8c;
+      color: white;
+      font-size: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.22);
+      transition: .2s;
+    }
+
+    .ai-button:hover {
+      transform: scale(1.06);
+      background: #066d78;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+      nav {
+        display: none;
+      }
+
+      .search-grid,
+      .properties,
+      .services {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .hero {
+        min-height: 650px;
+      }
+
+      .search-grid,
+      .properties,
+      .services,
+      .form-row,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 65px 18px;
+      }
+
+      .hero-content {
+        padding: 70px 18px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .search-box {
+        margin: -35px 15px 0;
+      }
+
+      .about-image {
+        height: 330px;
+      }
+
+      .ai-label {
+        right: 15px;
+      }
+
+      .ai-button {
+        right: 15px;
+      }
+    }
+  </style>
+
+  <!-- BOTPRESS NUEVO: BAGES LIVING / VERA -->
+  <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
+  <script
+    src="https://files.bpcontent.cloud/2026/09/30/07/20260930075626-BCY7U7XH.js"
+    defer>
+  </script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="nav">
+      <a href="#inicio" class="logo">Bages <span>Living</span></a>
+
+      <nav>
+        <a href="#viviendas">Viviendas</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#incidencias">Incidencias</a>
+        <a href="#visitas">Visitas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        🏡 Alquileres en Manresa y Bages
+      </div>
+
+      <h1>
+        Encuentra el lugar donde empieza tu próxima etapa
+      </h1>
+
+      <p>
+        Viviendas seleccionadas en Manresa y alrededores,
+        atención personalizada y un asistente virtual disponible para ayudarte.
+      </p>
+
+      <div class="buttons">
+        <a href="#viviendas" class="btn btn-primary">
+          Ver viviendas
+        </a>
+
+        <a href="#visitas" class="btn btn-light">
+          Solicitar una visita
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEARCH -->
+
+  <div class="search-box">
+
+    <div class="search-grid">
+
+      <div class="field">
+        <label>Localidad</label>
+        <select id="searchLocation">
+          <option value="">Todas</option>
+          <option value="Manresa">Manresa</option>
+          <option value="Sant Fruitós de Bages">Sant Fruitós de Bages</option>
+          <option value="Santpedor">Santpedor</option>
+          <option value="Navarcles">Navarcles</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Tipo</label>
+        <select id="searchType">
+          <option value="">Todos</option>
+          <option value="Piso">Piso</option>
+          <option value="Casa">Casa</option>
+          <option value="Dúplex">Dúplex</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Precio máximo</label>
+        <select id="searchPrice">
+          <option value="">Sin límite</option>
+          <option value="800">800 €</option>
+          <option value="1000">1.000 €</option>
+          <option value="1200">1.200 €</option>
+        </select>
+      </div>
+
+      <button class="btn btn-primary" type="button" onclick="buscarViviendas()">
+        Buscar
+      </button>
+
+    </div>
+
+    <p id="searchResult" style="margin-top:14px;color:#647a82;font-size:14px;"></p>
+
+  </div>
+
+  <!-- PROPERTIES -->
+
+  <section id="viviendas">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <span>Viviendas disponibles</span>
+        <h2>Tu próximo hogar puede estar aquí</h2>
+        <p>
+          Descubre una selección de viviendas de alquiler en Manresa y comarca.
+        </p>
+      </div>
+
+      <div class="properties" id="propertyGrid">
+
+        <article class="property"
+          data-location="Manresa"
+          data-type="Piso"
+          data-price="850">
+
+          <img
+            class="property-image"
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80"
+            alt="Piso moderno en Manresa">
+
+          <div class="property-body">
+
+            <span class="tag">DESTACADA</span>
+
+            <h3>Piso moderno y luminoso</h3>
+
+            <div class="property-location">
+              📍 Manresa
+            </div>
+
+            <div class="property-info">
+              <span>🛏️ 2 habitaciones</span>
+              <span>🚿 1 baño</span>
+              <span>📐 78 m²</span>
+            </div>
+
+            <div class="price">
+              850 € <small>/ mes</small>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="property"
+          data-location="Sant Fruitós de Bages"
+          data-type="Casa"
+          data-price="1100">
+
+          <img
+            class="property-image"
+            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80"
+            alt="Casa en Sant Fruitós de Bages">
+
+          <div class="property-body">
+
+            <span class="tag">CASA</span>
+
+            <h3>Casa familiar con terraza</h3>
+
+            <div class="property-location">
+              📍 Sant Fruitós de Bages
+            </div>
+
+            <div class="property-info">
+              <span>🛏️ 3 habitaciones</span>
+              <span>🚿 2 baños</span>
+              <span>📐 125 m²</span>
+            </div>
+
+            <div class="price">
+              1.100 € <small>/ mes</small>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="property"
+          data-location="Santpedor"
+          data-type="Dúplex"
+          data-price="950">
+
+          <img
+            class="property-image"
+            src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=80"
+            alt="Dúplex en Santpedor">
+
+          <div class="property-body">
+
+            <span class="tag">DÚPLEX</span>
+
+            <h3>Dúplex reformado</h3>
+
+            <div class="property-location">
+              📍 Santpedor
+            </div>
+
+            <div class="property-info">
+              <span>🛏️ 3 habitaciones</span>
+              <span>🚿 2 baños</span>
+              <span>📐 102 m²</span>
+            </div>
+
+            <div class="price">
+              950 € <small>/ mes</small>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="property"
+          data-location="Manresa"
+          data-type="Piso"
+          data-price="780">
+
+          <img
+            class="property-image"
+            src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80"
+            alt="Piso acogedor en Manresa">
+
+          <div class="property-body">
+
+            <span class="tag">PISO</span>
+
+            <h3>Piso acogedor en zona tranquila</h3>
+
+            <div class="property-location">
+              📍 Manresa
+            </div>
+
+            <div class="property-info">
+              <span>🛏️ 2 habitaciones</span>
+              <span>🚿 1 baño</span>
+              <span>📐 70 m²</span>
+            </div>
+
+            <div class="price">
+              780 € <small>/ mes</small>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="property"
+          data-location="Navarcles"
+          data-type="Casa"
+          data-price="1000">
+
+          <img
+            class="property-image"
+            src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80"
+            alt="Casa en Navarcles">
+
+          <div class="property-body">
+
+            <span class="tag">CASA</span>
+
+            <h3>Casa con jardín</h3>
+
+            <div class="property-location">
+              📍 Navarcles
+            </div>
+
+            <div class="property-info">
+              <span>🛏️ 3 habitaciones</span>
+              <span>🚿 2 baños</span>
+              <span>📐 118 m²</span>
+            </div>
+
+            <div class="price">
+              1.000 € <small>/ mes</small>
+            </div>
+
+          </div>
+        </article>
+
+        <article class="property"
+          data-location="Manresa"
+          data-type="Dúplex"
+          data-price="1200">
+
+          <img
+            class="property-image"
+            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80"
+            alt="Dúplex moderno en Manresa">
+
+          <div class="property-body">
+
+            <span class="tag">PREMIUM</span>
+
+            <h3>Dúplex moderno con terraza</h3>
+
+            <div class="property-location">
+              📍 Manresa
+            </div>
+
+            <div class="property-info">
+              <span>🛏️ 3 habitaciones</span>
+              <span>🚿 2 baños</span>
+              <span>📐 110 m²</span>
+            </div>
+
+            <div class="price">
+              1.200 € <small>/ mes</small>
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- VIDEO -->
+
+  <section class="video-section">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <span>Conoce Bages Living</span>
+        <h2>Una nueva forma de buscar vivienda</h2>
+        <p>
+          Te acompañamos durante todo el proceso de alquiler.
+        </p>
+      </div>
+
+      <div class="video-wrapper">
+        <iframe
+          src="https://player.vimeo.com/video/76979871"
+          title="Vídeo Bages Living"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SERVICES -->
+
+  <section id="servicios">
+
+    <div class="container">
+
+      <div class="section-heading">
+        <span>Servicios</span>
+        <h2>Mucho más que encontrar un piso</h2>
+        <p>
+          Bages Living te acompaña antes, durante y después del alquiler.
+        </p>
+      </div>
+
+      <div class="services">
+
+        <div class="service">
+          <div class="service-icon">🏠</div>
+          <h3>Buscar vivienda</h3>
+          <p>
+            Te ayudamos a encontrar una vivienda que se adapte a tus necesidades.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">📅</div>
+          <h3>Visitas</h3>
+          <p>
+            Solicita una visita de 30 minutos de forma sencilla.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">🤝</div>
+          <h3>Atención personalizada</h3>
+          <p>
+            Te acompañamos durante todo el proceso de alquiler.
+          </p>
+        </div>
+
+        <div class="service">
+          <div class="service-icon">🤖</div>
+          <h3>Vera, asistente virtual</h3>
+          <p>
+            Resuelve tus dudas y solicita ayuda en cualquier momento.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FORMS -->
+
+  <section class="form-section" id="incidencias">
+
+    <div class="container">
+
+      <div class="form-grid">
+
+        <div class="form-card">
+
+          <h3>¿Tienes una incidencia?</h3>
+
+          <p>
+            Cuéntanos qué ocurre y nos pondremos en contacto contigo.
+          </p>
+
+          <form onsubmit="enviarIncidencia(event)">
+
+            <div class="form-row">
+
+              <div class="form-group">
+                <label>Nombre</label>
+                <input class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label>Teléfono</label>
+                <input class="form-control" type="tel" required>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <label>Vivienda</label>
+              <input class="form-control" placeholder="Dirección o referencia">
+            </div>
+
+            <div class="form-group">
+              <label>¿Qué ocurre?</label>
+              <textarea class="form-control" required placeholder="Describe la incidencia..."></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              Enviar incidencia
+            </button>
+
+            <div id="incidentSuccess" class="success-message">
+              ✓ Hemos recibido tu incidencia. Gracias.
+            </div>
+
+          </form>
+
+        </div>
+
+        <div class="form-card" id="contacto">
+
+          <h3>¿Buscas una vivienda?</h3>
+
+          <p>
+            Déjanos tus datos y cuéntanos qué estás buscando.
+          </p>
+
+          <form onsubmit="enviarSolicitud(event)">
+
+            <div class="form-row">
+
+              <div class="form-group">
+                <label>Nombre</label>
+                <input class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label>Teléfono</label>
+                <input class="form-control" type="tel" required>
+              </div>
+
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input class="form-control" type="email" required>
+            </div>
+
+            <div class="form-group">
+              <label>¿Qué estás buscando?</label>
+              <textarea class="form-control" required placeholder="Zona, presupuesto, habitaciones..."></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              Solicitar información
+            </button>
+
+            <div id="requestSuccess" class="success-message">
+              ✓ Hemos recibido tu solicitud. Gracias.
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- AGENDA -->
+
+  <section class="agenda" id="visitas">
+
+    <div class="container">
+
+      <div class="section-heading">
+
+        <span>Visitas</span>
+
+        <h2>¿Quieres visitar una vivienda?</h2>
+
+        <p>
+          Reserva una visita de 30 minutos directamente en nuestra agenda.
+        </p>
+
+      </div>
+
+      <a
+        class="btn btn-primary"
+        href="https://calendly.com/vrbempresa-ia/30min"
+        target="_blank"
+        rel="noopener">
+        📅 Reservar una visita
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="about-grid">
+
+        <div>
+
+          <img
+            class="about-image"
+            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85"
+            alt="Interior de vivienda">
+
+        </div>
+
+        <div class="about-text">
+
+          <div class="section-heading">
+            <span>Sobre Bages Living</span>
+            <h2>Tu vivienda, nuestro acompañamiento</h2>
+          </div>
+
+          <p>
+            Bages Living nace para facilitar la búsqueda y gestión de viviendas
+            de alquiler en Manresa y comarca del Bages.
+          </p>
+
+          <p>
+            Queremos que encontrar un hogar sea un proceso sencillo,
+            transparente y cercano.
+          </p>
+
+          <ul class="about-list">
+            <li>✓ Viviendas seleccionadas</li>
+            <li>✓ Atención cercana</li>
+            <li>✓ Gestión de visitas</li>
+            <li>✓ Asistente virtual disponible</li>
+          </ul>
+
+          <a href="#contacto" class="btn btn-primary">
+            Contactar
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+
+  <section class="cta">
+
+    <div class="container">
+
+      <h2>¿Buscas tu próximo hogar?</h2>
+
+      <p>
+        Explora nuestras viviendas o habla con Vera para resolver tus dudas.
+      </p>
+
+      <div class="buttons" style="justify-content:center;">
+
+        <a href="#viviendas" class="btn btn-light">
+          Ver viviendas
+        </a>
+
+        <button
+          class="btn btn-primary"
+          type="button"
+          onclick="abrirAsistente()">
+          🤖 Hablar con Vera
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div>
+        <h3>Bages Living</h3>
+        <p>
+          Alquileres de viviendas en Manresa y comarca del Bages.
+        </p>
+      </div>
+
+      <div>
+        <h3>Enlaces</h3>
+        <p><a href="#viviendas">Viviendas</a></p>
+        <p><a href="#servicios">Servicios</a></p>
+        <p><a href="#visitas">Visitas</a></p>
+        <p><a href="#contacto">Contacto</a></p>
+      </div>
+
+      <div>
+        <h3>Contacto</h3>
+        <p>Manresa · Bages</p>
+        <p>Atención personalizada</p>
+        <p>Asistente virtual Vera</p>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 Bages Living · Proyecto demo creado por VRB
+    </div>
+
+  </footer>
+
+  <!-- BOTÓN FLOTANTE DE VERA -->
+
+  <div class="ai-label">
+    ¿Necesitas ayuda?
+  </div>
+
+  <button
+    class="ai-button"
+    type="button"
+    onclick="abrirAsistente()"
+    aria-label="Abrir asistente de Bages Living"
+    title="Hablar con Vera">
+    🤖
+  </button>
+
+
+  <script>
+
+    /* BUSCADOR */
+
+    function buscarViviendas() {
+
+      const location = document.getElementById("searchLocation").value;
+      const type = document.getElementById("searchType").value;
+      const price = document.getElementById("searchPrice").value;
+
+      const properties = document.querySelectorAll(".property");
+
+      let count = 0;
+
+      properties.forEach(property => {
+
+        const matchLocation =
+          !location || property.dataset.location === location;
+
+        const matchType =
+          !type || property.dataset.type === type;
+
+        const matchPrice =
+          !price || Number(property.dataset.price) <= Number(price);
+
+        const visible =
+          matchLocation && matchType && matchPrice;
+
+        property.style.display = visible ? "block" : "none";
+
+        if (visible) count++;
+
+      });
+
+      const result = document.getElementById("searchResult");
+
+      result.textContent =
+        count === 1
+          ? "Hemos encontrado 1 vivienda que coincide con tu búsqueda."
+          : `Hemos encontrado ${count} viviendas que coinciden con tu búsqueda.`;
+
+    }
+
+
+    /* FORMULARIO INCIDENCIA */
+
+    function enviarIncidencia(event) {
+
+      event.preventDefault();
+
+      document.getElementById("incidentSuccess").style.display = "block";
+
+      event.target.reset();
+
+    }
+
+
+    /* FORMULARIO SOLICITUD */
+
+    function enviarSolicitud(event) {
+
+      event.preventDefault();
+
+      document.getElementById("requestSuccess").style.display = "block";
+
+      event.target.reset();
+
+    }
+
+
+    /* VERA */
+
+    function abrirAsistente() {
+
+      if (
+        window.botpress &&
+        typeof window.botpress.open === "function"
+      ) {
+
+        window.botpress.open();
+
+      } else {
+
+        alert(
+          "🤖 Vera se está cargando. Inténtalo de nuevo en unos segundos."
+        );
+
+      }
+
+    }
+
+  </script>
+
+</body>
+</html>
+```
